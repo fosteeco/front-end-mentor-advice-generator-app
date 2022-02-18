@@ -13,10 +13,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="advice-container">
-      Advice #<!-- Advice ID goes here -->
-
-      "<!-- Advice text goes here -->"
+    <main>
+      <div class="advice-container">
+        <header class="advice-header">
+          Advice #
+          <span id="adviceNumber">117</span>
+        </header>
+        <div class="quote-container">
+          "
+          <span id="quote"> It is easy to situp</span>
+          "
+        </div>
+        <div class="break-container">
+          <div class="rule-container">
+            <hr class="gray-rule" />
+          </div>
+          <div class="double-ticks">
+            <div class="tick"></div>
+            <div class="tick"></div>
+          </div>
+          <div class="rule-container">
+            <hr class="gray-rule" />
+          </div>
+        </div>
+        <div class="circle-button green-bg" id="newQuoteButton">
+          <img src="./images/icon-dice.svg" alt="" />
+        </div>
+      </div>
     </main>
     <div class="attribution">
       Challenge by
@@ -31,5 +54,6 @@
         >Link to Repo</a
       >
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

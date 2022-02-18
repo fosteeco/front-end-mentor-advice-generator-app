@@ -5,10 +5,50 @@
   --neonGreen: hsl(150, 100%, 66%);
   --grayBlue: hsl(217, 19%, 38%);
   --darkGrayishBlue: hsl(217, 19%, 24%);
+  --mainBg: hsl(220, 22%, 16%);
+  --containerBg: hsl(218, 20%, 24%);
+  --hrColor: rgb(210, 225, 234, 5%);
   --bodyFontSize: 28px;
 }
 
+.green-bg {
+  background-color: var(--neonGreen);
+}
+
+.gray-rule {
+  border: 1px solid var(--hrColor);
+}
+
+.break-container {
+  height: 25px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.double-ticks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.tick {
+  width: 3.75px;
+  height: 10px;
+  margin: 0 2px;
+  border-radius: 15px;
+  background-color: var(--lightCyan);
+}
+
 body {
+  margin: 0;
+  padding: 10px;
+  background-color: var(--mainBg);
+  color: var(--lightCyan);
+}
+
+main {
   font-family: 'Manrope', Arial, Helvetica, sans-serif;
   min-height: 100vh;
   display: flex;
@@ -16,6 +56,45 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
+  font-size: 28px;
+}
+
+.advice-container {
+  background-color: var(--containerBg);
+  min-width: 400px;
+  min-height: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  max-width: 500px;
+}
+
+.advice-header {
+  color: var(--neonGreen);
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.quote-container {
+  text-align: center;
+}
+
+.circle-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(50%, 50%);
+  border-radius: 100%;
+  cursor: pointer;
 }
 
 .attribution {
